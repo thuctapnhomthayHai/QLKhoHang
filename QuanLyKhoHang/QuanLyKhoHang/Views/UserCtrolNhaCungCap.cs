@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang.Views
 {
-    public partial class HangHoa : UserControl
+    public partial class UserCtrolHangHoa : UserControl
     {
-        public HangHoa()
+        public UserCtrolHangHoa()
         {
             InitializeComponent();
         }

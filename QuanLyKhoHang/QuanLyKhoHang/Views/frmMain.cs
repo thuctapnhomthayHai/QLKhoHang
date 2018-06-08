@@ -20,11 +20,9 @@ namespace QuanLyKhoHang.Views
         private void buttonItem8_Click(object sender, EventArgs e)
         {
             panelEx1.Controls.Clear();
-            ToolStripDropDownItem ts = (ToolStripDropDownItem)sender;
-            if (ts.Text == "Quản lý nhà cung cấp")
-                panelEx1.Controls.Add(new NhaCungCap());
-            else if (ts.Text == "Quản lý hàng hóa")
-                panelEx1.Controls.Add(new HangHoa());
+            UserCtrolHangHoa us = new UserCtrolHangHoa();
+                panelEx1.Controls.Add(us);
+                panelEx1.Dock = DockStyle.Fill;
             //else if (ts.Text == "Sản phẩm")
             //    panelEx1.Controls.Add(new Sanpham());
             //else if (ts.Text == "Phiếu nhập")
@@ -33,14 +31,38 @@ namespace QuanLyKhoHang.Views
             //    panelEx1.Controls.Add(new Phieuxuat());
             //else if (ts.Text == "Hướng dẫn")
             //    panelEx1.Controls.Add(new Huongdan());
-            else if (ts.Text == "Đăng xuất")
-            {
-                frmDangNhap dn = new frmDangNhap();
-                this.Close();
-                dn.ShowDialog();
-            }
-            else if (ts.Text == "Thoát")
-                Application.Exit();
+            //if (ts.Text == "Đăng xuất")
+            //{
+            //    frmDangNhap dn = new frmDangNhap();
+            //    this.Close();
+            //    dn.ShowDialog();
+            //}
+            //else if (ts.Text == "Thoát")
+            //    Application.Exit();
+        }
+
+        private void buttonItem5_Click(object sender, EventArgs e)
+        {
+            panelEx1.Controls.Clear();
+            UserCtrolHangHoa us = new UserCtrolHangHoa();
+            panelEx1.Controls.Add(us);
+            panelEx1.Dock = DockStyle.Fill;
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                e.Cancel = true;
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

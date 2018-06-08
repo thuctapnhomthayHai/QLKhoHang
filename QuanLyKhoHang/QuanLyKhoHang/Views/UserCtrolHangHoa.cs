@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang.Views
 {
-    public partial class NhaCungCap : UserControl
+    public partial class UserCtrolHangHoa : UserControl
     {
-        public NhaCungCap()
+        public UserCtrolHangHoa()
         {
             InitializeComponent();
         }
 
-        private void panelEx2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_TenNCC_TextChanged(object sender, EventArgs e)
+        private void btn_TimKiem_Click(object sender, EventArgs e)
         {
 
         }

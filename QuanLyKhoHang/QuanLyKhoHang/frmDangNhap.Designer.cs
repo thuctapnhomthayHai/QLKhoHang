@@ -129,6 +129,7 @@
             this.txtUserName.PreventEnterBeep = true;
             this.txtUserName.Size = new System.Drawing.Size(188, 26);
             this.txtUserName.TabIndex = 4;
+            this.txtUserName.Text = "admin";
             // 
             // txtPassWord
             // 
@@ -143,6 +144,7 @@
             this.txtPassWord.PreventEnterBeep = true;
             this.txtPassWord.Size = new System.Drawing.Size(188, 26);
             this.txtPassWord.TabIndex = 4;
+            this.txtPassWord.Text = "1";
             // 
             // frmDangNhap
             // 

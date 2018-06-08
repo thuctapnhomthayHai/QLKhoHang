@@ -31,11 +31,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\Thực tập nhóm_TH14\QLTV\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.2, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -75,17 +81,17 @@
     <Compile Include="Views\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HangHoa.cs">
+    <Compile Include="Views\UserCtrolHangHoa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\HangHoa.Designer.cs">
-      <DependentUpon>HangHoa.cs</DependentUpon>
+    <Compile Include="Views\UserCtrolHangHoa.Designer.cs">
+      <DependentUpon>UserCtrolHangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\NhaCungCap.cs">
+    <Compile Include="Views\UserCtrolNhaCungCap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\NhaCungCap.Designer.cs">
-      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    <Compile Include="Views\UserCtrolNhaCungCap.Designer.cs">
+      <DependentUpon>UserCtrolNhaCungCap.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmConnectDataBase.resx">
       <DependentUpon>frmConnectDataBase.cs</DependentUpon>
@@ -106,8 +112,11 @@
     <EmbeddedResource Include="Views\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\NhaCungCap.resx">
-      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    <EmbeddedResource Include="Views\UserCtrolHangHoa.resx">
+      <DependentUpon>UserCtrolHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserCtrolNhaCungCap.resx">
+      <DependentUpon>UserCtrolNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

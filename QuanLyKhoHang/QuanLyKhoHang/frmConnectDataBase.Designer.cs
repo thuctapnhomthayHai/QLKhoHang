@@ -120,6 +120,7 @@
             this.txtTenMayChu.PreventEnterBeep = true;
             this.txtTenMayChu.Size = new System.Drawing.Size(177, 26);
             this.txtTenMayChu.TabIndex = 1;
+            this.txtTenMayChu.Text = "DESKTOP-76IRRSL\\SQLEXPRESS";
             // 
             // txtTenDangNhap
             // 
@@ -162,6 +163,7 @@
             this.txtTenCSDL.PreventEnterBeep = true;
             this.txtTenCSDL.Size = new System.Drawing.Size(177, 26);
             this.txtTenCSDL.TabIndex = 1;
+            this.txtTenCSDL.Text = "Quan_Ly_Kho";
             // 
             // cbxChonTaiKhoan
             // 
