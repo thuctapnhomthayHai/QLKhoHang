@@ -7,60 +7,119 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+using System.Data;
 using System.Data.SqlClient;
+
 
 namespace QuanLyKhoHang
 {
-    public partial class frmDangNhap : Form
+    public partial class DangNhapHeThong : Form
     {
-        public frmDangNhap()
+        public static string QuyenHan = "";
+        public static string USERNAME = "";
+        public static string MaNV = "";
+        public DangNhapHeThong()
         {
             InitializeComponent();
         }
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        public DataTable QH(string UN)
         {
-            try
+            Connection acc = new Connection();
+            SqlDataReader a = acc.ExecuteReader("SELECT QUYENHAN FROM DANGNHAP WHERE USERNAME='" + UN + "'");
+            while (a.Read())
             {
-                SqlConnection conn = new SqlConnection(Controller.Connecction.ConnectionString);
-                conn.Open();
+                QuyenHan = a["QUYENHAN"].ToString();
 
-                string sql = "select *from TaiKhoan where acc = '" + txtUserName.Text.Trim() + "' and pass = '" + txtPassWord.Text.Trim() + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
+            }
+            return null;
+        }
 
-                SqlDataReader dta = cmd.ExecuteReader();
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+            Connection acc = new Connection();
+            string user = tbx_username.Text.Trim();
+            string pass = tbx_password.Text.Trim();
+            SqlDataReader reader = acc.ExecuteReader("select USERNAME,PASSWORD, QUYENHAN from DANGNHAP where USERNAME='" + user + "' and PASSWORD='" + pass + "'");
+            if (reader.Read() == true)
+            {
+                QH(tbx_username.Text);
+                MainMenu.Quyenhan = QuyenHan;
+                NguoiDung.QuyenHan = QuyenHan;
+                NguoiDung.TenDangNhap = tbx_username.Text;
+                BaoCao.TenDangNhap = tbx_username.Text;
+                Doimatkhau.USERNAME = tbx_username.Text;
+                DoiQuyen.USERNAME = tbx_username.Text;
+                Doimatkhau.QUYENHAN = QuyenHan;
+                ThemTaiKhoan.Username = tbx_username.Text;
+                //lb_STT.Text = "Đăng Nhập Thành Công!";
+                MessageBox.Show("Bạn Đang Là: " + QuyenHan + "");
+                this.Hide();
+                MainMenu menu = new MainMenu();
+                menu.ShowDialog();
+            }
+            else
+            {
+                //lb_STT.Text = "Sai Thông Tin Đăng Nhập! Vui Lòng Nhập Lại!";
+                tbx_username.Clear();
+                tbx_password.Clear();
+                tbx_username.Focus();
+            }
 
-                if (dta.Read() == true)
+        }
+
+        private void tbx_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_dangnhap.Focus();
+                Connection acc = new Connection();
+                string user = tbx_username.Text.Trim();
+                string pass = tbx_password.Text.Trim();
+                SqlDataReader reader = acc.ExecuteReader("select USERNAME,PASSWORD from DANGNHAP where USERNAME='" + user + "' and PASSWORD='" + pass + "'");
+                if (reader.Read() == true)
                 {
-                    Controller.Connecction.NameLogin = txtUserName.Text.Trim();
-
-                    if (cbxNhoTaiKhoan.Checked == true)
-                    {
-                        using (StreamWriter wr = new StreamWriter("info.ini"))
-                        {
-                            wr.WriteLine(txtUserName.Text.Trim());
-                            wr.WriteLine(txtPassWord.Text.Trim());
-                            wr.Close();
-                        }
-                    }
-                    else
-                    {
-                        File.Delete("info.ini");
-                    }
-                    Views.frmMain m = new Views.frmMain();
+                    QH(tbx_username.Text);
+                    MainMenu.Quyenhan = QuyenHan;
+                    NguoiDung.QuyenHan = QuyenHan;
+                    NguoiDung.TenDangNhap = tbx_username.Text;
+                    BaoCao.TenDangNhap = tbx_username.Text;
+                    Doimatkhau.USERNAME = tbx_username.Text;
+                    DoiQuyen.USERNAME = tbx_username.Text;
+                    Doimatkhau.QUYENHAN = QuyenHan;
+                    ThemTaiKhoan.Username = tbx_username.Text;
+                    //lb_STT.Text = "Đăng Nhập Thành Công!";
+                    MessageBox.Show("Bạn Đang Là: " + QuyenHan + "");
                     this.Hide();
-                    m.ShowDialog();
+                    MainMenu menu = new MainMenu();
+                    menu.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                    //lb_STT.Text = "Sai Thông Tin Đăng Nhập! Vui Lòng Nhập Lại!";
+                    tbx_username.Clear();
+                    tbx_password.Clear();
+                    tbx_username.Focus();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+
             }
         }
+
+        private void chb_showpass_CheckedChanged(object sender, EventArgs e)
+        {
+            this.tbx_password.PasswordChar = this.chb_showpass.Checked ? char.MinValue : '*';
+        }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn Chắc Chắn Muốn Thoát?", "Xác Nhận!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+            }
+        }
+
     }
 }
