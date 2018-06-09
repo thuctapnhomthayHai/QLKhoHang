@@ -101,5 +101,10 @@ namespace QuanLyKhoHang
         {
             Application.Exit();
         }
+
+        private void PhieuNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

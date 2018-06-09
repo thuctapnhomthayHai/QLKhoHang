@@ -16,3 +16,21 @@ D:\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
 C:\Users\tobmo\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.exe.config
 C:\Users\tobmo\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.exe
 C:\Users\tobmo\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.exe.config
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.exe
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csprojResolveAssemblyReference.cache
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.BaoCao.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Doimatkhau.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.DoiQuyen.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.DangNhapHeThong.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.KhoHang.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.MainMenu.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NguoiDung.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.PhieuNhap.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Properties.Resources.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ThemTaiKhoan.resources
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csproj.GenerateResource.Cache
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.exe
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.pdb
+D:\Kỳ 6\Thực tập nhóm_TH14\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.DanhMucSP.resources
