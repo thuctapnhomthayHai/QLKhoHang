@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace QuanLyKhoHang
 {
-    public partial class PhieuNhap : Form
+    public partial class NhapXuat : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SNTR6UK;Initial Catalog=QLKH;Integrated Security=True");
-        public PhieuNhap()
+        public NhapXuat()
         {
             InitializeComponent();
         }
