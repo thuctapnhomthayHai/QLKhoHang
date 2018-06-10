@@ -54,8 +54,8 @@ namespace QuanLyKhoHang
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KhachHang nhanvien = new KhachHang();
-            nhanvien.ShowDialog();
+            KhachHang KH = new KhachHang();
+            KH.Show();
         }
 
         private void btn_khohang_Click(object sender, EventArgs e)

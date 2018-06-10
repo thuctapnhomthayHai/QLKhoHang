@@ -29,7 +29,7 @@ namespace QuanLyKhoHang
         public static void Connect()
         {
             Con = new SqlConnection();   //Khởi tạo đối tượng
-            Con.ConnectionString = @"Data Source=PC\THUYDUNG;Initial Catalog=QLKH;Integrated Security=True";
+            Con.ConnectionString = @"Data Source=DESKTOP-76IRRSL\SQLEXPRESS;Initial Catalog=QLKH;Integrated Security=True";
             Con.Open();//mở kết nối
             //kiểm tra kết nối
             if (Con.State == ConnectionState.Open)
