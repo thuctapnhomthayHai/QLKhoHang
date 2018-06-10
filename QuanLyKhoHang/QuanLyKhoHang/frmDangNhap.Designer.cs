@@ -34,24 +34,27 @@
             this.tbx_username = new System.Windows.Forms.TextBox();
             this.tbx_password = new System.Windows.Forms.TextBox();
             this.chb_showpass = new System.Windows.Forms.CheckBox();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_dangnhap = new System.Windows.Forms.Button();
+            this.btn_thoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 29);
+            this.label1.Size = new System.Drawing.Size(510, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng nhập";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseMnemonic = false;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 59);
+            this.label2.Location = new System.Drawing.Point(60, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 29);
             this.label2.TabIndex = 0;
@@ -61,7 +64,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 123);
+            this.label3.Location = new System.Drawing.Point(60, 113);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 29);
             this.label3.TabIndex = 0;
@@ -71,7 +74,7 @@
             // tbx_username
             // 
             this.tbx_username.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_username.Location = new System.Drawing.Point(154, 62);
+            this.tbx_username.Location = new System.Drawing.Point(239, 62);
             this.tbx_username.Name = "tbx_username";
             this.tbx_username.Size = new System.Drawing.Size(147, 26);
             this.tbx_username.TabIndex = 1;
@@ -79,7 +82,7 @@
             // tbx_password
             // 
             this.tbx_password.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_password.Location = new System.Drawing.Point(154, 120);
+            this.tbx_password.Location = new System.Drawing.Point(239, 110);
             this.tbx_password.Name = "tbx_password";
             this.tbx_password.Size = new System.Drawing.Size(147, 26);
             this.tbx_password.TabIndex = 1;
@@ -88,7 +91,7 @@
             // chb_showpass
             // 
             this.chb_showpass.AutoSize = true;
-            this.chb_showpass.Location = new System.Drawing.Point(154, 184);
+            this.chb_showpass.Location = new System.Drawing.Point(239, 172);
             this.chb_showpass.Name = "chb_showpass";
             this.chb_showpass.Size = new System.Drawing.Size(105, 17);
             this.chb_showpass.TabIndex = 2;
@@ -96,27 +99,33 @@
             this.chb_showpass.UseVisualStyleBackColor = true;
             this.chb_showpass.CheckedChanged += new System.EventHandler(this.chb_showpass_CheckedChanged);
             // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(263, 228);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(95, 33);
-            this.btn_thoat.TabIndex = 3;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
-            // 
             // btn_dangnhap
             // 
             this.btn_dangnhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dangnhap.Location = new System.Drawing.Point(128, 227);
+            this.btn_dangnhap.Image = global::QuanLyKhoHang.Properties.Resources.login;
+            this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dangnhap.Location = new System.Drawing.Point(169, 217);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(114, 34);
             this.btn_dangnhap.TabIndex = 3;
             this.btn_dangnhap.Text = "Đăng nhập";
+            this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_dangnhap.UseVisualStyleBackColor = true;
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.Image = global::QuanLyKhoHang.Properties.Resources.exit;
+            this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_thoat.Location = new System.Drawing.Point(324, 217);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(86, 33);
+            this.btn_thoat.TabIndex = 3;
+            this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // DangNhapHeThong
             // 
@@ -133,6 +142,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "DangNhapHeThong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

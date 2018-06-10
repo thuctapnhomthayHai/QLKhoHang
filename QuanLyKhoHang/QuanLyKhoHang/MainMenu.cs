@@ -47,15 +47,15 @@ namespace QuanLyKhoHang
         private void btn_xuatnhap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            NhapXuat nhanvien = new NhapXuat();
+            PhieuNhap nhanvien = new PhieuNhap();
             nhanvien.ShowDialog();
         }
 
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KhachHang nhanvien = new KhachHang();
-            nhanvien.ShowDialog();
+            KhachHang KH = new KhachHang();
+            KH.Show();
         }
 
         private void btn_khohang_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace QuanLyKhoHang
         private void btn_sanpham_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SanPham nhanvien = new SanPham();
+            SANPHAM nhanvien = new SANPHAM();
             nhanvien.ShowDialog();
         }
 
@@ -96,6 +96,25 @@ namespace QuanLyKhoHang
         private void đổiMậtKhẩuToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void ngườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NguoiDung ND = new NguoiDung();
+            ND.ShowDialog();
+        }
+
+        private void đổiQuyềnHạnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Quyenhan.Trim() == "ADMIN" || Quyenhan.Trim() == "Admin" || Quyenhan.Trim() == "admin")
+            {
+                DoiQuyen quyen = new DoiQuyen();
+                quyen.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn Phải là ADMIN thì mới thực hiện được thao tác này!");
+            } 
         }
     }
 }

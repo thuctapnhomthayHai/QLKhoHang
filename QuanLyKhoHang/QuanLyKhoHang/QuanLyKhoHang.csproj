@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -140,6 +144,9 @@
     <EmbeddedResource Include="BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucSP.resx">
+      <DependentUpon>DanhMucSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doimatkhau.resx">
       <DependentUpon>Doimatkhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +156,9 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhoHang.resx">
       <DependentUpon>KhoHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung.resx">
       <DependentUpon>NguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCC.resx">
+      <DependentUpon>NhaCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapXuat.resx">
       <DependentUpon>NhapXuat.cs</DependentUpon>
@@ -169,10 +182,15 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemTaiKhoan.resx">
       <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +203,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_export_17365.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
