@@ -57,21 +57,21 @@
             this.txb_giasp = new System.Windows.Forms.TextBox();
             this.txb_ghichu = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_ghinhan = new System.Windows.Forms.Button();
+            this.btn_huynhap = new System.Windows.Forms.Button();
+            this.btn_lammoi = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_chophepsua = new System.Windows.Forms.Button();
+            this.btn_themmoi = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox_showpart = new System.Windows.Forms.TextBox();
             this.groupBox_DSSP = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btn_timkiem = new System.Windows.Forms.Button();
+            this.txb_timkiem = new System.Windows.Forms.TextBox();
             this.dgv_SANPHAM = new System.Windows.Forms.DataGridView();
-            this.btn_themmoi = new System.Windows.Forms.Button();
-            this.btn_chophepsua = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
-            this.btn_lammoi = new System.Windows.Forms.Button();
-            this.btn_huynhap = new System.Windows.Forms.Button();
-            this.btn_ghinhan = new System.Windows.Forms.Button();
             this.pictureBox_sanpham = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.txb_timkiem = new System.Windows.Forms.TextBox();
-            this.btn_timkiem = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.label_thongbaoSP = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txb_soluong)).BeginInit();
@@ -107,12 +107,14 @@
             this.vềTrangChủToolStripMenuItem.Name = "vềTrangChủToolStripMenuItem";
             this.vềTrangChủToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vềTrangChủToolStripMenuItem.Text = "Về trang chủ";
+            this.vềTrangChủToolStripMenuItem.Click += new System.EventHandler(this.vềTrangChủToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -316,6 +318,66 @@
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             // 
+            // btn_ghinhan
+            // 
+            this.btn_ghinhan.Location = new System.Drawing.Point(19, 121);
+            this.btn_ghinhan.Name = "btn_ghinhan";
+            this.btn_ghinhan.Size = new System.Drawing.Size(208, 35);
+            this.btn_ghinhan.TabIndex = 5;
+            this.btn_ghinhan.Text = "Ghi nhận";
+            this.btn_ghinhan.UseVisualStyleBackColor = true;
+            this.btn_ghinhan.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // btn_huynhap
+            // 
+            this.btn_huynhap.Location = new System.Drawing.Point(166, 61);
+            this.btn_huynhap.Name = "btn_huynhap";
+            this.btn_huynhap.Size = new System.Drawing.Size(75, 45);
+            this.btn_huynhap.TabIndex = 4;
+            this.btn_huynhap.Text = "Hủy nhập";
+            this.btn_huynhap.UseVisualStyleBackColor = true;
+            this.btn_huynhap.Click += new System.EventHandler(this.btn_huynhap_Click);
+            // 
+            // btn_lammoi
+            // 
+            this.btn_lammoi.Location = new System.Drawing.Point(85, 61);
+            this.btn_lammoi.Name = "btn_lammoi";
+            this.btn_lammoi.Size = new System.Drawing.Size(75, 43);
+            this.btn_lammoi.TabIndex = 3;
+            this.btn_lammoi.Text = "Làm mới";
+            this.btn_lammoi.UseVisualStyleBackColor = true;
+            this.btn_lammoi.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Location = new System.Drawing.Point(6, 61);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(75, 43);
+            this.btn_xoa.TabIndex = 2;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btn_chophepsua
+            // 
+            this.btn_chophepsua.Location = new System.Drawing.Point(133, 17);
+            this.btn_chophepsua.Name = "btn_chophepsua";
+            this.btn_chophepsua.Size = new System.Drawing.Size(75, 38);
+            this.btn_chophepsua.TabIndex = 1;
+            this.btn_chophepsua.Text = "Cho phép sửa";
+            this.btn_chophepsua.UseVisualStyleBackColor = true;
+            this.btn_chophepsua.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_themmoi
+            // 
+            this.btn_themmoi.Location = new System.Drawing.Point(31, 17);
+            this.btn_themmoi.Name = "btn_themmoi";
+            this.btn_themmoi.Size = new System.Drawing.Size(75, 38);
+            this.btn_themmoi.TabIndex = 0;
+            this.btn_themmoi.Text = "Thêm mới";
+            this.btn_themmoi.UseVisualStyleBackColor = true;
+            this.btn_themmoi.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -346,6 +408,35 @@
             this.groupBox_DSSP.TabStop = false;
             this.groupBox_DSSP.Text = "Danh sách sản phẩm";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(962, 41);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Làm mới";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btn_timkiem
+            // 
+            this.btn_timkiem.Location = new System.Drawing.Point(829, 40);
+            this.btn_timkiem.Name = "btn_timkiem";
+            this.btn_timkiem.Size = new System.Drawing.Size(101, 26);
+            this.btn_timkiem.TabIndex = 2;
+            this.btn_timkiem.Text = "Tìm kiếm";
+            this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
+            // 
+            // txb_timkiem
+            // 
+            this.txb_timkiem.Location = new System.Drawing.Point(265, 40);
+            this.txb_timkiem.Name = "txb_timkiem";
+            this.txb_timkiem.Size = new System.Drawing.Size(501, 26);
+            this.txb_timkiem.TabIndex = 1;
+            this.txb_timkiem.Enter += new System.EventHandler(this.txb_timkiem_Enter);
+            this.txb_timkiem.Leave += new System.EventHandler(this.txb_timkiem_Leave);
+            // 
             // dgv_SANPHAM
             // 
             this.dgv_SANPHAM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -353,62 +444,6 @@
             this.dgv_SANPHAM.Name = "dgv_SANPHAM";
             this.dgv_SANPHAM.Size = new System.Drawing.Size(1089, 208);
             this.dgv_SANPHAM.TabIndex = 0;
-            // 
-            // btn_themmoi
-            // 
-            this.btn_themmoi.Location = new System.Drawing.Point(31, 17);
-            this.btn_themmoi.Name = "btn_themmoi";
-            this.btn_themmoi.Size = new System.Drawing.Size(75, 38);
-            this.btn_themmoi.TabIndex = 0;
-            this.btn_themmoi.Text = "Thêm mới";
-            this.btn_themmoi.UseVisualStyleBackColor = true;
-            this.btn_themmoi.Click += new System.EventHandler(this.btn_themmoi_Click);
-            // 
-            // btn_chophepsua
-            // 
-            this.btn_chophepsua.Location = new System.Drawing.Point(133, 17);
-            this.btn_chophepsua.Name = "btn_chophepsua";
-            this.btn_chophepsua.Size = new System.Drawing.Size(75, 38);
-            this.btn_chophepsua.TabIndex = 1;
-            this.btn_chophepsua.Text = "Cho phép sửa";
-            this.btn_chophepsua.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Location = new System.Drawing.Point(6, 61);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(75, 43);
-            this.btn_xoa.TabIndex = 2;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseVisualStyleBackColor = true;
-            // 
-            // btn_lammoi
-            // 
-            this.btn_lammoi.Location = new System.Drawing.Point(85, 61);
-            this.btn_lammoi.Name = "btn_lammoi";
-            this.btn_lammoi.Size = new System.Drawing.Size(75, 43);
-            this.btn_lammoi.TabIndex = 3;
-            this.btn_lammoi.Text = "Làm mới";
-            this.btn_lammoi.UseVisualStyleBackColor = true;
-            this.btn_lammoi.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btn_huynhap
-            // 
-            this.btn_huynhap.Location = new System.Drawing.Point(166, 61);
-            this.btn_huynhap.Name = "btn_huynhap";
-            this.btn_huynhap.Size = new System.Drawing.Size(75, 45);
-            this.btn_huynhap.TabIndex = 4;
-            this.btn_huynhap.Text = "Hủy nhập";
-            this.btn_huynhap.UseVisualStyleBackColor = true;
-            // 
-            // btn_ghinhan
-            // 
-            this.btn_ghinhan.Location = new System.Drawing.Point(19, 121);
-            this.btn_ghinhan.Name = "btn_ghinhan";
-            this.btn_ghinhan.Size = new System.Drawing.Size(208, 35);
-            this.btn_ghinhan.TabIndex = 5;
-            this.btn_ghinhan.Text = "Ghi nhận";
-            this.btn_ghinhan.UseVisualStyleBackColor = true;
             // 
             // pictureBox_sanpham
             // 
@@ -427,32 +462,6 @@
             this.button8.TabIndex = 27;
             this.button8.Text = "Tải ảnh";
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // txb_timkiem
-            // 
-            this.txb_timkiem.Location = new System.Drawing.Point(265, 40);
-            this.txb_timkiem.Name = "txb_timkiem";
-            this.txb_timkiem.Size = new System.Drawing.Size(501, 26);
-            this.txb_timkiem.TabIndex = 1;
-            // 
-            // btn_timkiem
-            // 
-            this.btn_timkiem.Location = new System.Drawing.Point(829, 40);
-            this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(101, 26);
-            this.btn_timkiem.TabIndex = 2;
-            this.btn_timkiem.Text = "Tìm kiếm";
-            this.btn_timkiem.UseVisualStyleBackColor = true;
-            this.btn_timkiem.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(962, 41);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Làm mới";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // label_thongbaoSP
             // 
@@ -501,6 +510,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "SANPHAM";
             this.Text = "Sản phẩm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SANPHAM_FormClosed);
+            this.Load += new System.EventHandler(this.SANPHAM_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txb_soluong)).EndInit();

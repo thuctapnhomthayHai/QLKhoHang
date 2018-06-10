@@ -289,11 +289,6 @@ namespace QuanLyKhoHang
             }
         }
 
-        private void bt_prev_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SANPHAM_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
@@ -456,11 +451,6 @@ namespace QuanLyKhoHang
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_themmoi_Click(object sender, EventArgs e)
         {
 
         }
