@@ -30,8 +30,6 @@
         {
             this.tbx_tdn = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_huy = new System.Windows.Forms.Button();
-            this.btn_dmk = new System.Windows.Forms.Button();
             this.tbx_nlmatkhaumoi = new System.Windows.Forms.TextBox();
             this.tbx_matkhaumoi = new System.Windows.Forms.TextBox();
             this.tbx_matkhaucu = new System.Windows.Forms.TextBox();
@@ -39,6 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_huy = new System.Windows.Forms.Button();
+            this.btn_dmk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbx_tdn
@@ -57,28 +57,6 @@
             this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 20;
             this.label5.Text = "Tên Đăng Nhập";
-            // 
-            // btn_huy
-            // 
-            this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_huy.Location = new System.Drawing.Point(184, 222);
-            this.btn_huy.Name = "btn_huy";
-            this.btn_huy.Size = new System.Drawing.Size(93, 30);
-            this.btn_huy.TabIndex = 19;
-            this.btn_huy.Text = "Hủy";
-            this.btn_huy.UseVisualStyleBackColor = true;
-            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
-            // 
-            // btn_dmk
-            // 
-            this.btn_dmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dmk.Location = new System.Drawing.Point(76, 222);
-            this.btn_dmk.Name = "btn_dmk";
-            this.btn_dmk.Size = new System.Drawing.Size(93, 30);
-            this.btn_dmk.TabIndex = 18;
-            this.btn_dmk.Text = "Đổi";
-            this.btn_dmk.UseVisualStyleBackColor = true;
-            this.btn_dmk.Click += new System.EventHandler(this.btn_dmk_Click);
             // 
             // tbx_nlmatkhaumoi
             // 
@@ -115,13 +93,15 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(111, 9);
+            this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 24);
+            this.label3.Size = new System.Drawing.Size(343, 24);
             this.label3.TabIndex = 14;
             this.label3.Text = "Đổi mật khẩu";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -143,11 +123,39 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Mật khẩu hiện Tại";
             // 
+            // btn_huy
+            // 
+            this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huy.Image = global::QuanLyKhoHang.Properties.Resources.Huy1;
+            this.btn_huy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_huy.Location = new System.Drawing.Point(224, 222);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(74, 37);
+            this.btn_huy.TabIndex = 19;
+            this.btn_huy.Text = "Hủy";
+            this.btn_huy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_huy.UseVisualStyleBackColor = true;
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
+            // 
+            // btn_dmk
+            // 
+            this.btn_dmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dmk.Image = global::QuanLyKhoHang.Properties.Resources.reset;
+            this.btn_dmk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dmk.Location = new System.Drawing.Point(134, 222);
+            this.btn_dmk.Name = "btn_dmk";
+            this.btn_dmk.Size = new System.Drawing.Size(75, 37);
+            this.btn_dmk.TabIndex = 18;
+            this.btn_dmk.Text = "Đổi";
+            this.btn_dmk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_dmk.UseVisualStyleBackColor = true;
+            this.btn_dmk.Click += new System.EventHandler(this.btn_dmk_Click);
+            // 
             // Doimatkhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 261);
+            this.ClientSize = new System.Drawing.Size(343, 275);
             this.Controls.Add(this.tbx_tdn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_huy);
