@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -152,6 +156,9 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhoHang.resx">
       <DependentUpon>KhoHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +190,7 @@
     <EmbeddedResource Include="ThemTaiKhoan.resx">
       <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -225,6 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_export_17365.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
