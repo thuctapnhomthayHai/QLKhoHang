@@ -16,5 +16,12 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
+
+        private void HuongDan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            MainMenu mn = new MainMenu();
+            mn.ShowDialog();
+        }
     }
 }

@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.userNamemenu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuUser = new System.Windows.Forms.MenuStrip();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbx_title = new System.Windows.Forms.Label();
-            this.btn_sanpham = new System.Windows.Forms.Button();
-            this.pc_User = new System.Windows.Forms.PictureBox();
-            this.btn_khohang = new System.Windows.Forms.Button();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ngườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiQuyềnHạnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_baocao = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbx_title = new System.Windows.Forms.Label();
+            this.btn_sanpham = new System.Windows.Forms.Button();
+            this.pc_User = new System.Windows.Forms.PictureBox();
+            this.btn_khohang = new System.Windows.Forms.Button();
+            this.btn_huongdan = new System.Windows.Forms.Button();
             this.btn_nhacc = new System.Windows.Forms.Button();
             this.btn_danhmuc = new System.Windows.Forms.Button();
             this.btn_khachhang = new System.Windows.Forms.Button();
@@ -70,6 +70,48 @@
             this.menuUser.Size = new System.Drawing.Size(132, 24);
             this.menuUser.TabIndex = 1;
             this.menuUser.Text = "menuStrip1";
+            // 
+            // cToolStripMenuItem
+            // 
+            this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ngườiDùngToolStripMenuItem,
+            this.đổiMậtKhẩuToolStripMenuItem,
+            this.đổiQuyềnHạnToolStripMenuItem,
+            this.đăngXuấtToolStripMenuItem});
+            this.cToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cToolStripMenuItem.Image")));
+            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
+            // 
+            // ngườiDùngToolStripMenuItem
+            // 
+            this.ngườiDùngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ngườiDùngToolStripMenuItem.Image")));
+            this.ngườiDùngToolStripMenuItem.Name = "ngườiDùngToolStripMenuItem";
+            this.ngườiDùngToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.ngườiDùngToolStripMenuItem.Text = "Người Dùng";
+            this.ngườiDùngToolStripMenuItem.Click += new System.EventHandler(this.ngườiDùngToolStripMenuItem_Click);
+            // 
+            // đổiMậtKhẩuToolStripMenuItem
+            // 
+            this.đổiMậtKhẩuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiMậtKhẩuToolStripMenuItem.Image")));
+            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click_1);
+            // 
+            // đổiQuyềnHạnToolStripMenuItem
+            // 
+            this.đổiQuyềnHạnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiQuyềnHạnToolStripMenuItem.Image")));
+            this.đổiQuyềnHạnToolStripMenuItem.Name = "đổiQuyềnHạnToolStripMenuItem";
+            this.đổiQuyềnHạnToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.đổiQuyềnHạnToolStripMenuItem.Text = "Đổi Quyền Hạn";
+            this.đổiQuyềnHạnToolStripMenuItem.Click += new System.EventHandler(this.đổiQuyềnHạnToolStripMenuItem_Click);
+            // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem.Image")));
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // panel1
             // 
@@ -125,60 +167,19 @@
             this.btn_khohang.UseVisualStyleBackColor = false;
             this.btn_khohang.Click += new System.EventHandler(this.btn_khohang_Click);
             // 
-            // cToolStripMenuItem
+            // btn_huongdan
             // 
-            this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ngườiDùngToolStripMenuItem,
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.đổiQuyềnHạnToolStripMenuItem,
-            this.đăngXuấtToolStripMenuItem});
-            this.cToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cToolStripMenuItem.Image")));
-            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
-            // 
-            // ngườiDùngToolStripMenuItem
-            // 
-            this.ngườiDùngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ngườiDùngToolStripMenuItem.Image")));
-            this.ngườiDùngToolStripMenuItem.Name = "ngườiDùngToolStripMenuItem";
-            this.ngườiDùngToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.ngườiDùngToolStripMenuItem.Text = "Người Dùng";
-            this.ngườiDùngToolStripMenuItem.Click += new System.EventHandler(this.ngườiDùngToolStripMenuItem_Click);
-            // 
-            // đổiMậtKhẩuToolStripMenuItem
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiMậtKhẩuToolStripMenuItem.Image")));
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
-            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click_1);
-            // 
-            // đổiQuyềnHạnToolStripMenuItem
-            // 
-            this.đổiQuyềnHạnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiQuyềnHạnToolStripMenuItem.Image")));
-            this.đổiQuyềnHạnToolStripMenuItem.Name = "đổiQuyềnHạnToolStripMenuItem";
-            this.đổiQuyềnHạnToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.đổiQuyềnHạnToolStripMenuItem.Text = "Đổi Quyền Hạn";
-            this.đổiQuyềnHạnToolStripMenuItem.Click += new System.EventHandler(this.đổiQuyềnHạnToolStripMenuItem_Click);
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem.Image")));
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
-            // 
-            // btn_baocao
-            // 
-            this.btn_baocao.BackColor = System.Drawing.Color.Green;
-            this.btn_baocao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_baocao.Image = ((System.Drawing.Image)(resources.GetObject("btn_baocao.Image")));
-            this.btn_baocao.Location = new System.Drawing.Point(323, 260);
-            this.btn_baocao.Name = "btn_baocao";
-            this.btn_baocao.Size = new System.Drawing.Size(272, 88);
-            this.btn_baocao.TabIndex = 21;
-            this.btn_baocao.Text = "Báo Cáo";
-            this.btn_baocao.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btn_baocao.UseVisualStyleBackColor = false;
+            this.btn_huongdan.BackColor = System.Drawing.Color.Green;
+            this.btn_huongdan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huongdan.Image = ((System.Drawing.Image)(resources.GetObject("btn_huongdan.Image")));
+            this.btn_huongdan.Location = new System.Drawing.Point(323, 260);
+            this.btn_huongdan.Name = "btn_huongdan";
+            this.btn_huongdan.Size = new System.Drawing.Size(272, 88);
+            this.btn_huongdan.TabIndex = 21;
+            this.btn_huongdan.Text = "Hướng dẫn";
+            this.btn_huongdan.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btn_huongdan.UseVisualStyleBackColor = false;
+            this.btn_huongdan.Click += new System.EventHandler(this.btn_huongdan_Click);
             // 
             // btn_nhacc
             // 
@@ -273,7 +274,7 @@
             this.Controls.Add(this.pc_User);
             this.Controls.Add(this.btn_khohang);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_baocao);
+            this.Controls.Add(this.btn_huongdan);
             this.Controls.Add(this.btn_nhacc);
             this.Controls.Add(this.btn_danhmuc);
             this.Controls.Add(this.btn_khachhang);
@@ -307,7 +308,7 @@
         private System.Windows.Forms.Button btn_khohang;
         private System.Windows.Forms.MenuStrip menuUser;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_baocao;
+        private System.Windows.Forms.Button btn_huongdan;
         private System.Windows.Forms.Button btn_nhacc;
         private System.Windows.Forms.Button btn_danhmuc;
         private System.Windows.Forms.Button btn_khachhang;

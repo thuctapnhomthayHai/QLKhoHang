@@ -116,5 +116,12 @@ namespace QuanLyKhoHang
                 MessageBox.Show("Bạn Phải là ADMIN thì mới thực hiện được thao tác này!");
             } 
         }
+
+        private void btn_huongdan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HuongDan hd = new HuongDan();
+            hd.ShowDialog();
+        }
     }
 }
