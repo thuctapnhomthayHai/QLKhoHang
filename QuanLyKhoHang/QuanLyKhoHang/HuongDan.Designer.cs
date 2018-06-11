@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhoHang
 {
-    partial class BaoCao
+    partial class HuongDan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // BaoCao
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 261);
-            this.Name = "BaoCao";
-            this.Text = "BaoCao";
-            this.Load += new System.EventHandler(this.BaoCao_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "HuongDan";
         }
 
         #endregion

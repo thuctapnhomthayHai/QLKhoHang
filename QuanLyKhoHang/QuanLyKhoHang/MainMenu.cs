@@ -47,7 +47,7 @@ namespace QuanLyKhoHang
         private void btn_xuatnhap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PhieuNhap nhanvien = new PhieuNhap();
+            NhapXuat nhanvien = new NhapXuat();
             nhanvien.ShowDialog();
         }
 
@@ -82,7 +82,7 @@ namespace QuanLyKhoHang
         private void btn_baocao_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BaoCao nhanvien = new BaoCao();
+            HuongDan nhanvien = new HuongDan();
             nhanvien.ShowDialog();
         }
 

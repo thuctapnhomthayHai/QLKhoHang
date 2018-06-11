@@ -51,22 +51,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
-=======
-            this.txt_nhacungcap = new System.Windows.Forms.TextBox();
-            this.txt_khohang = new System.Windows.Forms.TextBox();
->>>>>>> 97bab3c303d99ee16415e1d4c1add9ad8db201d9
+
+
+            //this.txt_nhacungcap = new System.Windows.Forms.TextBox();
+            //this.txt_khohang = new System.Windows.Forms.TextBox();
+
             this.txt_ghichu = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
+
             this.txt_nhacungcap = new System.Windows.Forms.ComboBox();
             this.txt_khohang = new System.Windows.Forms.ComboBox();
-=======
->>>>>>> 97bab3c303d99ee16415e1d4c1add9ad8db201d9
+
+
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -281,8 +281,7 @@
             this.label3.Size = new System.Drawing.Size(83, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Ngày nhập";
-<<<<<<< HEAD
-=======
+
             // 
             // label2
             // 
@@ -380,8 +379,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Kho Hàng";
             this.tabPage2.UseVisualStyleBackColor = true;
->>>>>>> 97bab3c303d99ee16415e1d4c1add9ad8db201d9
-            // 
+
             // label2
             // 
             this.label2.AutoSize = true;

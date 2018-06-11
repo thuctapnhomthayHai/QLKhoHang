@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaoCao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaoCao.Designer.cs">
-      <DependentUpon>BaoCao.cs</DependentUpon>
-    </Compile>
     <Compile Include="BoPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +78,12 @@
     </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuongDan.Designer.cs">
+      <DependentUpon>HuongDan.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>Form</SubType>
@@ -141,9 +141,6 @@
     <Compile Include="ThemTaiKhoan.Designer.cs">
       <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCao.resx">
-      <DependentUpon>BaoCao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DanhMucSP.resx">
       <DependentUpon>DanhMucSP.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuongDan.resx">
+      <DependentUpon>HuongDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -170,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhaCC.resx">
       <DependentUpon>NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapXuat.resx">
       <DependentUpon>NhapXuat.cs</DependentUpon>

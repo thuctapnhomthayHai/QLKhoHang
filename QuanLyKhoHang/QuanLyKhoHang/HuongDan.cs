@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang
 {
-    public partial class BaoCao : Form
+    public partial class HuongDan : Form
     {
-        public static string TenDangNhap = "";
-        public BaoCao()
+        public HuongDan()
         {
             InitializeComponent();
-        }
-
-        private void BaoCao_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.tbx_makho = new System.Windows.Forms.ComboBox();
             this.tbx_ghichu = new System.Windows.Forms.TextBox();
             this.tbx_timkiem = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.group_qldmsp = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_Timkiem = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button_lammoi = new System.Windows.Forms.Button();
@@ -59,20 +59,6 @@
             this.group_dmsp.SuspendLayout();
             this.group_qldmsp.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Image = global::QuanLyKhoHang.Properties.Resources.reset;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(604, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Làm Mới";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbx_makho
             // 
@@ -257,6 +243,20 @@
             this.group_qldmsp.TabStop = false;
             this.group_qldmsp.Text = "Quản Trị";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Image = global::QuanLyKhoHang.Properties.Resources.reset;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(604, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Làm Mới";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btn_Timkiem
             // 
             this.btn_Timkiem.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -372,6 +372,7 @@
             this.Controls.Add(this.group_qldmsp);
             this.Name = "DanhMucSP";
             this.Text = "DanhMucSP";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DanhMucSP_FormClosed);
             this.Load += new System.EventHandler(this.DanhMucSP_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

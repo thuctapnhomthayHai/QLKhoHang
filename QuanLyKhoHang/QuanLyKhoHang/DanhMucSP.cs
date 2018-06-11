@@ -256,5 +256,12 @@ namespace QuanLyKhoHang
                 tbx_madm.Focus();
             }
         }
+
+        private void DanhMucSP_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            MainMenu mn = new MainMenu();
+            mn.ShowDialog();
+        }
     }
 }
