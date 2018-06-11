@@ -105,3 +105,6 @@ C:\Users\Hung Nguyen\Desktop\TTCSDL\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\De
 C:\Users\Hung Nguyen\Desktop\TTCSDL\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csproj.CoreCompileInputs.cache
 C:\Users\Hung Nguyen\Desktop\TTCSDL\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.exe
 C:\Users\Hung Nguyen\Desktop\TTCSDL\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
+C:\Users\dell\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.exe.config
+C:\Users\dell\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.exe
+C:\Users\dell\Documents\GitHub\QLKhoHang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
