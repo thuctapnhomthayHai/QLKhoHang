@@ -68,8 +68,8 @@ namespace QuanLyKhoHang
         private void btn_nhacc_Click(object sender, EventArgs e)
         {
             this.Hide();
-            NhaCC nhanvien = new NhaCC();
-            nhanvien.ShowDialog();
+            NhaCC ncc = new NhaCC();
+            ncc.ShowDialog();
         }
 
         private void btn_sanpham_Click(object sender, EventArgs e)
